@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'MainFont';
+    src: url('/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: BoldFont;
+    src: url('/assets/fonts/static/SpaceGrotesk-Bold.ttf');
+    src: url('/assets/fonts/static/SpaceGrotesk-Medium.ttf');
+}
+
+:root {
+    --dark: #151515;
+    --dark-grey: #242424;
+    --green: #4EE1A0;
+    --grey: #D9D9D9;
+    --white: #FFFFFF;
+    --bg: #F2F2F2;
+
+    --main-font: 'MainFont', sans-serif, monospace;
+    --bold-font: 'BoldFont', sans-serif, monospace;
+
+    --font-size-heading-xl: 88px;
+    --font-size-heading-l: 48px;
+    --font-size-heading-m: 24px;
+    --font-size-body: 18px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MainFont', sans-serif;
+    background-color: var(--dark);
+    font-size: var(--font-size-body);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+nav {
+    padding: 30px;
+    text-align: center;
+}
+
+nav > span {
+    font-family: var(--bold-font);
+    font-size: var(--font-size-heading-m);
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+/* hero sector */
+
+.photo-wrap {
+    text-align: center;
+}
+.photo-wrap img{
+    width: 50%;
+}
+
+.ring, .circle {
+    position: absolute;
+}
+
+.ring {
+    right: 50%;
+}
+
+.circle {
+    left: 80%;
+}
+
