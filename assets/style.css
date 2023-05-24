@@ -46,7 +46,7 @@ nav {
     text-align: center;
 }
 
-nav > span {
+nav>span {
     font-family: var(--bold-font);
     font-size: var(--font-size-heading-m);
 }
@@ -63,24 +63,53 @@ nav ul li {
     padding: 5px;
 }
 
-/* hero sector */
+/* hero section */
 
 .photo-wrap {
     text-align: center;
 }
-.photo-wrap img{
+
+.photo-wrap img {
     width: 50%;
 }
 
-.ring, .circle {
+.ring,
+.circle {
     position: absolute;
 }
 
-.ring {
+.photo-wrap .ring {
     right: 50%;
 }
 
-.circle {
+.photo-wrap .circle {
     left: 80%;
 }
 
+.hero article {
+    text-align: center;
+}
+
+.hero article h1 {
+    font-family: var(--bold-font);
+    font-size: 40px;
+}
+
+.hero article h1 span {
+    border-bottom: 4px solid var(--green);
+    padding-bottom: 1px;
+}
+
+.hero article a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hero article a h3 {
+    display: inline;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 10px;
+    font-family: var(--bold-font);
+    font-size: 16px;
+    letter-spacing: 3px;
+}
