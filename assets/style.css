@@ -69,7 +69,7 @@ nav ul li {
     text-align: center;
 }
 
-.photo-wrap img {
+.photo-wrap .photo {
     width: 50%;
 }
 
@@ -105,13 +105,13 @@ nav ul li {
     margin-bottom: 40px;
 }
 
-.hero article a {
-
+.link-contact {
     text-decoration: none;
     color: var(--white);
+    cursor: pointer;
 }
 
-.hero article h3 {
+.link-contact h3 {
     display: inline;
     border-bottom: 2px solid var(--green);
     padding-bottom: 10px;
@@ -131,4 +131,51 @@ hr {
 
 .skills {
     text-align: center;
+}
+
+/* projects section */
+
+.projects {
+    padding: 0 15px;
+}
+
+.projects .title-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects h2 {
+    margin: 5px;
+    font-size: 40px;
+}
+
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.project img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.project h3 {
+    margin: 15px 0;
+}
+
+.project p {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.project p span {
+    padding-right: 15px;
+}
+
+.project span a {
+    padding-right: 25px;
+    cursor: pointer;
 }
