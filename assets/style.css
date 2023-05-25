@@ -103,6 +103,7 @@ nav ul li {
 
 .hero article p {
     margin-bottom: 40px;
+    color: var(--grey);
 }
 
 .link-contact {
@@ -133,10 +134,15 @@ hr {
     text-align: center;
 }
 
+.skills p {
+    color: var(--grey);
+}
+
 /* projects section */
 
 .projects {
     padding: 0 15px;
+    padding-bottom: 60px;
 }
 
 .projects .title-project {
@@ -173,9 +179,50 @@ hr {
 
 .project p span {
     padding-right: 15px;
+    color: var(--grey);
 }
 
 .project span a {
     padding-right: 25px;
     cursor: pointer;
+}
+
+
+/* contact section */
+
+#contact {
+    text-align: center;
+    background-color: var(--dark-grey);
+    padding: 40px 15px;
+}
+
+#contact h2 {
+    font-size: 40px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: var(--grey);
+
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#contact form input {
+    width: 100%;
+    padding-top: 1px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--grey);
+    
+}
+
+#contact form label {
+    padding: 10px;
+    color: #979797;
+    font-size: 16px;
 }
