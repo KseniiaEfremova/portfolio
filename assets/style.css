@@ -89,6 +89,7 @@ nav ul li {
 .hero article {
     text-align: center;
     padding: 8px;
+    margin-bottom: 80px;
 }
 
 .hero article h1 {
@@ -122,15 +123,13 @@ nav ul li {
 }
 
 hr {
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
-    width: 90%;
+    margin: 0 15px;
 }
 
 /* skills section */
 
 .skills {
+    margin: 40px 0;
     text-align: center;
 }
 
@@ -141,6 +140,7 @@ hr {
 /* projects section */
 
 .projects {
+    margin: 60px 0 20px 0;
     padding: 0 15px;
     padding-bottom: 60px;
 }
@@ -196,9 +196,9 @@ hr {
     padding: 40px 15px;
 }
 
-#contact div{
+#contact div {
     text-align: center;
-    
+
 }
 
 #contact h2 {
@@ -218,7 +218,8 @@ hr {
 
 }
 
-#contact form input, textarea {
+#contact form input,
+textarea {
     width: 100%;
     background: none;
     border: none;
@@ -228,7 +229,8 @@ hr {
     padding: 0;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
 }
 
@@ -251,3 +253,16 @@ button {
 
 
 /* footer */
+
+footer {
+    padding-top: 10px;
+    background-color: var(--dark-grey);
+    text-align: center;
+}
+
+.hr {
+    display: flex;
+    border-bottom: 2px solid;
+    width: 90%;
+    text-align: center;
+}
