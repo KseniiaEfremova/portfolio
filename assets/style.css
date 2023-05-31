@@ -39,6 +39,7 @@ body {
     padding: 0;
 }
 
+/* Styling for mobile version */
 
 /* navbar */
 nav {
@@ -61,6 +62,11 @@ nav ul {
 
 nav ul li {
     padding: 5px;
+    cursor: pointer;
+}
+
+nav ul li img:hover {
+    color: var(--green);
 }
 
 /* hero section */
@@ -111,6 +117,10 @@ nav ul li {
     text-decoration: none;
     color: var(--white);
     cursor: pointer;
+}
+
+.link-contact:hover {
+    color: var(--green);
 }
 
 .link-contact h3 {
@@ -227,11 +237,14 @@ textarea {
     color: var(--white);
     font-family: var(--main-font);
     padding: 0;
+    text-transform: uppercase;
 }
 
 input:focus,
 textarea:focus {
     outline: none;
+
+    padding: 20px;
 }
 
 #contact form label {
@@ -251,6 +264,10 @@ button {
     border: none;
 }
 
+button:hover {
+    color: var(--green);
+}
+
 
 /* footer */
 
@@ -265,4 +282,93 @@ footer {
     border-bottom: 2px solid;
     width: 90%;
     text-align: center;
+}
+
+
+/* Styling for desktops version */
+
+@media screen and (min-width: 600px) {
+
+    body {
+        padding: 40px 165px;
+    }
+
+    /* navbar */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* hero section */
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(auto, 5);
+        grid-template-rows: auto;
+        padding: 30px;
+    }
+
+    .photo-wrap {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .hero article {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        text-align: start;
+        padding: 0 90px 0 0;
+    }
+
+    hr {
+        grid-column: 1/5;
+        margin: 0;
+        margin-top: 80px;
+    }
+
+    .photo-wrap .photo {
+        width: 100%;
+    }
+
+    .photo-wrap .ring {
+        right: 70%;
+    }
+
+    .photo-wrap .circle {
+        top: 95%;
+        left: 60%;
+    }
+
+    .hero article h1 {
+        font-size: var(--font-size-heading-xl);
+    }
+
+    /* skills section */
+    .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .skills-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skills-block div {
+        text-align: start;
+    }
+
+    .skills-block div h2 {
+        font-size: var(--font-size-heading-l);
+    }
+
+    .skills .ring {
+        left: 70%;
+    }
+
+    /* projects section */
 }
