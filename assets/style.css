@@ -277,19 +277,19 @@ footer {
     text-align: center;
 }
 
-.hr {
+/* .hr {
     display: flex;
     border-bottom: 2px solid;
     width: 90%;
     text-align: center;
-}
+} */
 
 
 /* Styling for desktops version */
 
 @media screen and (min-width: 600px) {
 
-    body {
+    .black-bg {
         padding: 40px 165px;
     }
 
@@ -385,7 +385,7 @@ footer {
 
     /* contact section */
     #contact {
-        padding: 0;
+        padding: 60px 180px;
     }
     #contact .contact-box {
         display: flex;
@@ -406,6 +406,14 @@ footer {
     .contact-box form {
         width: 50%;
         padding-left: 80px;
+    }
+
+    footer {
+        padding: 60px 180px;
+    }
+
+    footer nav {
+        border-top: 2px solid var(--grey);
     }
 
 
