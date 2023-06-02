@@ -41,6 +41,10 @@ body {
 
 /* Styling for mobile version */
 
+.black-bg {
+    margin: 0 15px;
+}
+
 /* navbar */
 nav {
     padding: 30px;
@@ -203,7 +207,7 @@ hr {
 #contact {
     text-align: end;
     background-color: var(--dark-grey);
-    padding: 40px 15px;
+    padding: 40px 30px;
 }
 
 #contact div {
@@ -385,7 +389,7 @@ footer {
 
     /* contact section */
     #contact {
-        padding: 60px 180px;
+        padding: 60px 195px;
     }
     #contact .contact-box {
         display: flex;
@@ -409,7 +413,7 @@ footer {
     }
 
     footer {
-        padding: 60px 180px;
+        padding: 60px 195px;
     }
 
     footer nav {
